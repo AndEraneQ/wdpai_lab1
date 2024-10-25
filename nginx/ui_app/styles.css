@@ -1,0 +1,182 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  body {
+    font-family: "Inter", sans-serif;
+    background-color: rgb(250, 250, 250);
+  }
+  
+  /* Variables */
+  :root {
+    --color-text-primary: rgb(16, 24, 40);
+    --color-text-secondary: rgb(52, 64, 84);
+    --color-text-tertiary: rgb(102, 112, 133);
+    --color-text-accent: rgb(100, 116, 139);
+  
+    --color-border: rgba(208, 213, 221, 1);
+    --color-background: white;
+    --color-primary: rgb(136, 45, 211);
+  
+    --border-radius-small: 7px;
+    --border-radius-medium: 10px;
+    --border-radius-large: 15px;
+  
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 600;
+  
+    --font-size-small: 14px;
+    --font-size-medium: 16px;
+    --font-size-large: 20px;
+  
+    --spacing-small: 5px;
+    --spacing-medium: 10px;
+    --spacing-large: 15px;
+    --spacing-xlarge: 30px;
+  }
+  
+  /* Layout */
+  .main-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+  }
+  
+  .wrapper {
+    width: 400px;
+    max-width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-xlarge);
+  }
+  
+  /* Form Styles */
+  .main-form {
+    width: 100%;
+    padding: var(--spacing-xlarge) var(--spacing-medium);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-small);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-large);
+    background-color: var(--color-background);
+    padding: 30px 20px;
+  }
+  
+  .main-form-header {
+    color: var(--color-text-primary);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-large);
+  }
+  
+  /* Input Styles */
+  .input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-small);
+    width: 100%;
+    color: var(--color-text-tertiary);
+    font-size: var(--font-size-medium);
+  }
+  
+  .form-label {
+    color: var(--color-text-secondary);
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-small);
+    padding: 10px 0;
+  }
+  
+  .form-input {
+    padding: var(--spacing-medium) var(--spacing-large);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-medium);
+  }
+  
+  /* Agreement Section */
+  .agreement-wrapper {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-medium);
+  }
+  
+  .agreement-text {
+    color: var(--color-text-tertiary);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-medium);
+  }
+  
+  .agreement-text-underlined {
+    text-decoration: underline;
+  }
+  
+  /* Button Styles */
+  .submit-button {
+    width: 100%;
+    padding: var(--spacing-large) 0;
+    border: none;
+    border-radius: var(--border-radius-large);
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-medium);
+    cursor: pointer;
+  }
+  
+  /* Users Section */
+  .users-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-large);
+  }
+  
+  .user-wrapper {
+    width: 100%;
+    padding: var(--spacing-medium) var(--spacing-large);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-small);
+    background-color: var(--color-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .user-wrapper-infos {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-small);
+    width: 100%;
+  }
+  
+  .user-wrapper-infos-name {
+    color: var(--color-text-primary);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-small);
+  }
+  
+  .user-wrapper-infos-role {
+    color: var(--color-text-accent);
+    font-weight: var(--font-weight-light);
+    font-size: var(--font-size-small);
+  }
+  
+  /* Delete Button */
+  .delete-button {
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-background);
+    border: none;
+    cursor: pointer;
+    color: var(--color-text-tertiary);
+  }
+  

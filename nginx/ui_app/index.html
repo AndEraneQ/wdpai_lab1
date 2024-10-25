@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GET and POST Requests</title>
+    <!-- External Scripts -->
+    <script type="module" src="./getRequest.js"></script>
+    <script type="module" src="./postRequest.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="wrapper">
+        <!-- Form Section -->
+        <section class="form-section">
+          <form class="main-form" aria-labelledby="form-header">
+            <h1 id="form-header" class="main-form-header">
+              Let's level up your brand, together
+            </h1>
+            <div class="inputs-wrapper">
+              <div class="input-wrapper">
+                <label for="firstName" class="form-label">First name</label>
+                <input
+                  type="text"
+                  name="firstName"
+                  id="firstName"
+                  placeholder="First name"
+                  class="form-input"
+                  required
+                />
+              </div>
+              <div class="input-wrapper">
+                <label for="lastName" class="form-label">Last name</label>
+                <input
+                  type="text"
+                  name="lastName"
+                  id="lastName"
+                  placeholder="Last name"
+                  class="form-input"
+                  required
+                />
+              </div>
+              <div class="input-wrapper">
+                <label for="role" class="form-label">Role</label>
+                <input
+                  type="text"
+                  name="role"
+                  id="role"
+                  placeholder="Role"
+                  class="form-input"
+                  required
+                />
+              </div>
+            </div>
+            <div class="agreement-wrapper">
+              <input type="checkbox" id="privacyPolicy" required />
+              <label for="agreement" class="agreement-text">
+                You agree to our friendly
+                <span class="agreement-text-underlined">privacy policy</span>
+              </label>
+            </div>
+            <button type="submit" class="submit-button" id="submit-button">Submit</button>
+          </form>
+        </section>
+        <!-- Users List Section -->
+        <section class="users-wrapper"></section>
+      </div>
+    </div>
+  </body>
+</html>
